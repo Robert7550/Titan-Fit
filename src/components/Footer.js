@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section about">
-          <h1 className="logo-text">Gym Name</h1>
+          <h1 className="logo-text">TitanFit</h1>
           <p className='p-text'>
             Your fitness journey starts here. Join us to achieve your fitness goals with our professional trainers and state-of-the-art facilities.
           </p>

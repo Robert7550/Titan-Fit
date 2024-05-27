@@ -1,6 +1,7 @@
 // src/components/Header.js
 import React, { useState } from 'react';
 import './Header.css';
+import { LinkContainer } from 'react-router-bootstrap';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,11 +17,22 @@ const Header = () => {
       </div>
       <nav className={`nav ${isOpen ? 'nav-open' : ''}`}>
         <ul className="nav-list">
-          <li><a href="#home">Home</a></li>
+
+        <LinkContainer to='/'>
+          <li><a href="/">Home</a></li>
+        </LinkContainer>
+
           <li><a href="#about">About</a></li>
           <li><a href="#classes">Classes</a></li>
-          <li><a href="#trainers">Trainers</a></li>
-          <li><a href="#contact">Contact</a></li>
+
+          <LinkContainer to='/foods'>
+            <li><a href="/foods">Foods</a></li>
+          </LinkContainer>
+
+          <LinkContainer to='/contact'>
+            <li><a href="/contact">Contact</a></li>
+          </LinkContainer>
+
         </ul>
       </nav>
       <div className="hamburger" onClick={toggleMenu}>

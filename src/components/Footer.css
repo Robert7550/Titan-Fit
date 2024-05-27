@@ -18,7 +18,7 @@
     
   }
 
-  .footer-section .p-text{
+  .footer-section .p-text, .footer-section p{
     color: black;
   }
   
@@ -26,7 +26,7 @@
     margin-bottom: 15px;
   }
   
-  .footer-section ul, .footer-section li, .footer-section a, .footer-section p{
+  .footer-section ul, .footer-section li, .footer-section a{
     color: white;
     text-decoration: none;
   }

@@ -1,0 +1,102 @@
+/* src/components/Contact.css */
+
+.contact-form {
+    position: relative;
+    padding: 100px 20px;
+    background-image: url('https://wallpaperaccess.com/full/834294.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+
+  
+.contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    /* text-align: center; */
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .contact-form {
+      padding: 15px;
+    }
+
+    /* .contact-content{
+        flex-direction: column;
+    } */
+  
+    .submit-btn {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  }
+  

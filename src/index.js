@@ -5,23 +5,32 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-import { Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-// import Hero from './screencomponents/Hero';
-// import About from './screencomponents/About';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import Hero from './screencomponents/Hero';
+import About from './screencomponents/About';
+import Classes from './screencomponents/Classes';
+
+import Foods from './screencomponents/Foods';
+import Payment from './Payment/Payment';
+import Contact from './Contact/Contact';
 
 
 
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route path='/' element={<App/>}>
-//       <Route path='/' element={<Hero/>} />
-//       <Route path='/about' element={<About/>} />
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<App/>}>
+      <Route path='/' index={true} element={<Hero/>} />
+      {/* <Route path='#' element={<About/>} /> 
+      <Route path='#' element={<Classes/>} /> */}
+      <Route path='/foods' element={<Foods/>} />
+      <Route path='/payment' element={<Payment/>} />
+      <Route path='/contact' element={<Contact/>} />
 
 
-//     </Route>
+    </Route>
 
-//   )
-// )
+  )
+)
 
 
 
@@ -30,7 +39,7 @@ import { Route, createBrowserRouter, createRoutesFromElements } from 'react-rout
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
